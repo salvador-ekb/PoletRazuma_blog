@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Тест по истории Септуагинты</title>
-    <meta name="description" content="Узнайте больше о создании греческого перевода Библии и легенде о 70 старцах">
+    <meta name="description" content="Узнайте больше о создании греческого перевода Библии и легенде о 70 старцах.">
     <link rel="canonical" href="https://salvador-ekb.github.io/PoletRazuma_blog/septuaginta-test.html">
     <style>
         :root {
@@ -30,122 +30,35 @@
             box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
             border: 1px solid #f1f5f9;
         }
-
-        /* --- Адаптация для мобильных устройств --- */
         @media (max-width: 600px) {
-            body {
-                padding: 15px 10px; /* Меньше отступов от краев экрана */
-            }
-            .card {
-                padding: 25px 15px; /* Меньше пустоты внутри карточки */
-                border-radius: 12px;
-            }
-            h1 {
-                font-size: 1.4rem;
-                margin-bottom: 25px;
-            }
-            .question {
-                font-size: 1.15rem;
-                margin-bottom: 20px;
-            }
-            .options button {
-                padding: 12px 16px;
-                font-size: 0.95rem;
-            }
-            .feedback {
-                padding: 15px;
-                font-size: 0.9rem;
-            }
+            body { padding: 15px 10px; }
+            .card { padding: 25px 15px; border-radius: 12px; }
+            h1 { font-size: 1.4rem; margin-bottom: 25px; }
+            .question { font-size: 1.15rem; margin-bottom: 20px; }
+            .options button { padding: 12px 16px; font-size: 0.95rem; }
+            .feedback { padding: 15px; font-size: 0.9rem; }
         }
-
-        h1 { 
-            color: #0f172a; 
-            text-align: center; 
-            font-size: 1.75rem;
-            margin-bottom: 40px;
-            font-weight: 800;
-        }
-        .progress { 
-            font-size: 0.85rem; 
-            color: var(--accent-blue); 
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-            font-weight: 700;
-            margin-bottom: 15px; 
-        }
-        .question { 
-            font-size: 1.3rem; 
-            font-weight: 600; 
-            margin-bottom: 30px; 
-            color: #334155;
-            display: none; 
-        }
+        h1 { color: #0f172a; text-align: center; font-size: 1.75rem; margin-bottom: 40px; font-weight: 800; }
+        .progress { font-size: 0.85rem; color: var(--accent-blue); text-transform: uppercase; letter-spacing: 0.05em; font-weight: 700; margin-bottom: 15px; }
+        .question { font-size: 1.3rem; font-weight: 600; margin-bottom: 30px; color: #334155; display: none; }
         .options { display: grid; gap: 12px; }
-        .options button { 
-            padding: 16px 24px; 
-            border: 2px solid #f1f5f9; 
-            border-radius: 12px; 
-            background: #fff; 
-            cursor: pointer; 
-            transition: all 0.2s ease; 
-            text-align: left; 
-            font-size: 1rem; 
-            color: #475569;
-        }
-        .options button:hover { 
-            background: #f0f9ff; 
-            border-color: var(--accent-blue);
-            color: var(--dark-blue);
-        }
-        .feedback { 
-            display: none; 
-            margin-top: 25px; 
-            padding: 20px; 
-            border-radius: 12px; 
-            background: #f8fafc; 
-            border-left: 4px solid var(--accent-blue);
-            font-size: 0.95rem;
-        }
-        #next-btn { 
-            display: none; 
-            margin-top: 30px; 
-            width: 100%; 
-            background: var(--accent-blue); 
-            color: white; 
-            border: none; 
-            font-weight: 700; 
-            padding: 18px; 
-            border-radius: 12px; 
-            cursor: pointer; 
-            font-size: 1rem;
-            transition: background 0.3s ease;
-        }
+        .options button { padding: 16px 24px; border: 2px solid #f1f5f9; border-radius: 12px; background: #fff; cursor: pointer; transition: all 0.2s ease; text-align: left; font-size: 1rem; color: #475569; }
+        .options button:hover { background: #f0f9ff; border-color: var(--accent-blue); color: var(--dark-blue); }
+        .feedback { display: none; margin-top: 25px; padding: 20px; border-radius: 12px; background: #f8fafc; border-left: 4px solid var(--accent-blue); font-size: 0.95rem; }
+        #next-btn { display: none; margin-top: 30px; width: 100%; background: var(--accent-blue); color: white; border: none; font-weight: 700; padding: 18px; border-radius: 12px; cursor: pointer; font-size: 1rem; transition: background 0.3s ease; }
         #next-btn:hover { background: var(--dark-blue); }
         #result-area { display: none; text-align: center; }
         #res-score { color: var(--dark-blue); font-size: 2.5rem; margin: 20px 0; }
-        .restart-btn { 
-            background: #f1f5f9; 
-            color: #64748b; 
-            width: auto; 
-            margin-top: 30px; 
-            padding: 12px 30px; 
-            border: none; 
-            border-radius: 10px; 
-            cursor: pointer;
-            font-weight: 600;
-        }
+        .restart-btn { background: #f1f5f9; color: #64748b; width: auto; margin-top: 30px; padding: 12px 30px; border: none; border-radius: 10px; cursor: pointer; font-weight: 600; }
     </style>
 </head>
 <body>
-
     <h1>Насколько хорошо вы знаете историю греческой Библии?</h1>
-
     <div class="card" id="quiz-app">
         <div class="progress" id="progress">Вопрос 1 из 10</div>
         <div id="question-container"></div>
         <div class="feedback" id="feedback"></div>
         <button id="next-btn">Следующий вопрос →</button>
-        
         <div id="result-area">
             <h2 id="res-title"></h2>
             <div id="res-score"></div>
@@ -153,7 +66,6 @@
             <button class="restart-btn" onclick="location.reload()">Пройти тест заново</button>
         </div>
     </div>
-
     ﻿<script>
 const quizData = {
 questions: [
@@ -296,11 +208,9 @@ text: "Поздравляем! Вы продемонстрировали глу�
 ]
 };
 </script>
-
     <script>
         let currentIdx = 0;
         let score = 0;
-
         const qContainer = document.getElementById('question-container');
         const feedback = document.getElementById('feedback');
         const nextBtn = document.getElementById('next-btn');
@@ -312,20 +222,19 @@ text: "Поздравляем! Вы продемонстрировали глу�
             feedback.style.display = 'none';
             nextBtn.style.display = 'none';
             progress.innerText = `Вопрос ${currentIdx + 1} из ${quizData.questions.length}`;
-            
             let html = `<div class="question" style="display:block">${data.q}</div><div class="options">`;
             data.a.forEach((opt, i) => {
                 html += `<button onclick="checkAnswer(${i})">${opt}</button>`;
             });
             html += `</div>`;
             qContainer.innerHTML = html;
+            window.scrollTo({ top: 0, behavior: 'smooth' });
         }
 
         window.checkAnswer = function(idx) {
             const data = quizData.questions[currentIdx];
             const buttons = qContainer.querySelectorAll('button');
             buttons.forEach(b => b.disabled = true);
-            
             if(idx === data.correct) {
                 score++;
                 buttons[idx].style.background = "#f0fdf4";
@@ -338,10 +247,13 @@ text: "Поздравляем! Вы продемонстрировали глу�
                 buttons[data.correct].style.background = "#f0fdf4";
                 buttons[data.correct].style.borderColor = "#22c55e";
             }
-            
-            feedback.innerHTML = `<strong>Разбор:</strong> ${data.feedback}`;
+            feedback.innerHTML = `<strong>Разбор:</strong> ` + data.feedback;
             feedback.style.display = 'block';
             nextBtn.style.display = 'block';
+            
+            setTimeout(() => {
+                feedback.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            }, 100);
         };
 
         nextBtn.onclick = () => {
@@ -358,15 +270,13 @@ text: "Поздравляем! Вы продемонстрировали глу�
             progress.style.display = 'none';
             feedback.style.display = 'none';
             nextBtn.style.display = 'none';
-            
             const final = quizData.results.find(r => score >= r.min && score <= r.max);
-            
             document.getElementById('res-title').innerText = final.title;
-            document.getElementById('res-score').innerText = `${score} / 10`;
+            document.getElementById('res-score').innerText = score + ` / 10`;
             document.getElementById('res-text').innerText = final.text;
             resultArea.style.display = 'block';
+            window.scrollTo({ top: 0, behavior: 'smooth' });
         }
-
         renderQuestion();
     </script>
 </body>
